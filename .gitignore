@@ -1,0 +1,67 @@
+########################
+# sails
+########################
+.sails
+.waterline
+.rigging
+.tmp
+
+
+########################
+# node.js / npm
+########################
+yarn.lock
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+node_modules
+
+npm-debug.log
+
+
+########################
+# misc / editors
+########################
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+*.iml
+
+########################
+# local config
+########################
+config/local.js
+config/m/*.js
+.rebooted
+
+### apidoc
+apidoc/
+
+### TS
+.tscache
+*.d.ts
+tscommand*.txt
+.baseDir.ts
+.baseDir.js
+
+*.js.map
+api/controllers/**/*.js
+api/services/**/*.js
+api/models/**/*.js
+test/**/*.spec.js
+
+### testing
+/coverage

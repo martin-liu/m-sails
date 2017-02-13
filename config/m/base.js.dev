@@ -1,0 +1,61 @@
+/**
+ * Base config
+ *
+ */
+
+module.exports = {
+  default: {
+    timeout: 20 * 60 * 1000,
+    cacheExpires: 300
+  },
+  mysql: {
+    key: 'm1',
+    host: '#{host}',
+    user: '#{user}',
+    password: '#{password}',
+    database: '#{db}'
+  },
+  uc4: {
+    key: 'uc4',
+    host: '#{uc4host}',
+    user: '#{uc4user}',
+    password: '#{uc4password}',
+    database: '#{uc4db}'
+  },
+  redis: {
+    host: '#{redis}'
+  },
+  email: {
+    host: '#{email_host}'
+  },
+  api: {
+    restjdbc: 'http://localhost:9000/',
+    jira: {
+      url: '#{jira_api}',
+      user: '#{jira_user}',
+      password: '#{jira_password}'
+    },
+    sms: {
+      sid: '#{sms_sid}',
+      token: '#{sms_token}',
+      from_phone_number: '#{sms_from_phone_number}'
+    },
+    kylin: {
+      authorization: '#{kylin_authorization}',
+      prod: '#{kylin_prod_url}',
+      qa: '#{kylin_qa_url}'
+    }
+  },
+  // application config
+  app: {
+    sigma: {
+      database: '#{sigma_db}',
+      baseDir: '#{unix_basedir}',
+      unixKeyPath: '#{unix_keypath}',
+      unixUser: '#{unix_user}',
+      unixServer_adhoc: '#{unix_server_adhoc}',
+      unixServer_trigger: '#{unix_server_trigger}'
+    }
+  }
+
+};
